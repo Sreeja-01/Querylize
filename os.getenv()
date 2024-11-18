@@ -1,0 +1,19 @@
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Retrieve the OpenAI API key from environment variables
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
+# Retrieve the ScraperAPI API key from environment variables
+SCRAPERAPI_API_KEY = os.getenv('SCRAPERAPI_API_KEY')
+
+# Retrieve Google application credentials file path from environment variables
+GOOGLE_APPLICATION_CREDENTIALS = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+
+# Now you can use the API keys and credentials in your application
+print("OpenAI API Key:", OPENAI_API_KEY)
+print("ScraperAPI Key:", SCRAPERAPI_API_KEY)
+print("Google Application Credentials Path:", GOOGLE_APPLICATION_CREDENTIALS)  # This will print the file path

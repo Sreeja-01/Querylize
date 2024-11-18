@@ -1,0 +1,12 @@
+# Ignore the virtual environment folder
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Google API credentials file
+credentials.json
+
+# Ignore environment configuration files
+.env
